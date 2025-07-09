@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro
+using TMPro;
 public class Lives : MonoBehaviour
 {
     public int lives;
@@ -14,5 +14,5 @@ public class Lives : MonoBehaviour
     void Update()
     {
        livesText.text = lives.ToString();            
-
+    }
 }
