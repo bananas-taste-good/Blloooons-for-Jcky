@@ -1,16 +1,21 @@
 using UnityEngine;
 
 public class Buyingtowers : MonoBehaviour
-    public MonkeyMoney money;
+
 {
+    public MokeyMoney money;
+    public TowerData towerData;    
     public void buyMonkey(Tower toBuy)
     { 
+        if(money.money >=toBuy.cost){
         money.money -= toBuy.cost;
-        Debud.log("Successfully bought " + toBuy.TowerName);
-    } 
+        Debug.Log("Successfully bought " + toBuy.TowerName);
+    }   
+    }
     public void monkeyCheck(int index)
-    (
-        buyMonkey(); //ToDo
-    )
+    {
+        Debug.Log(index);
+        buyMonkey(towerData.towers[index]);
+    }
 } 
 

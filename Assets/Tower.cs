@@ -6,9 +6,9 @@ public class Tower
     public string TowerName;
 
     public Tower(int newCost, string newName)
-    (
+    {
         this.cost = newCost;
         this.TowerName = newName;
-    )
+    }
     
 }
