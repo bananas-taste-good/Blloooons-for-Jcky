@@ -3411,6 +3411,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3812377368630053629, guid: cf04727dd6b97443194ecfad2d54d132, type: 3}
   m_PrefabInstance: {fileID: 1668126314276198869}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &747508892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8270464460934812397, guid: 0329a43a9dfad45288d92516d1155ee3, type: 3}
+  m_PrefabInstance: {fileID: 7681751596484043543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &752093751
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,6 +3554,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752093751}
   m_CullTransparentMesh: 1
+--- !u!1 &758620708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758620710}
+  - component: {fileID: 758620709}
+  m_Layer: 0
+  m_Name: Bloon Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &758620709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758620708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda6106a097fa4f32936e5c8e240ad10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPoint: {fileID: 602856038}
+  spawnDelay: 1.5
+  spawnTimer: 0
+  wave: 0
+  maxWave: 0
+  bloonSpawns: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  bloonPrefab:
+  - {fileID: 6291683028177576959, guid: 7a0c0d2d0c57147728b4a3e21974030e, type: 3}
+  - {fileID: 6608770987274773603, guid: 7c89534330e68410b813ee075cd9a80f, type: 3}
+  - {fileID: 4400932923768325553, guid: 970fc615b620d4d608f68d2b33739e37, type: 3}
+  - {fileID: 8650805325477649234, guid: d46e3c7d55eb84f6c832f22dcd7076fd, type: 3}
+  - {fileID: 747508892}
+  - {fileID: 8722091745915550594, guid: 2ed5ea289750e49eb91715482bbf7128, type: 3}
+  - {fileID: 840373558750508846, guid: b05aae30a84374f179373370cc3a3bf0, type: 3}
+  - {fileID: 7296776110309313807, guid: 83eace9a929e044748adacf2fb2eb3ff, type: 3}
+  - {fileID: 3294667187276839219, guid: ec17882218ea346b1856ccccd9e11801, type: 3}
+  - {fileID: 6216625147367014361, guid: 138a6b1bc3d9d4dd8b0b15c092230edf, type: 3}
+  - {fileID: 6501310225000082657, guid: 1494fcf57c2a14e89af729ab0383702a, type: 3}
+  - {fileID: 5869677673283740589, guid: 0a52eb4bd89b547bea612ba0419fdf0d, type: 3}
+  - {fileID: 6187933973063847955, guid: e98574ea53f6e4a04a78f52320eca375, type: 3}
+  - {fileID: 5180662230553664364, guid: 2dad13729cbf64dcfa3b035814ded579, type: 3}
+  - {fileID: 1441515761409082666, guid: cf04727dd6b97443194ecfad2d54d132, type: 3}
+  - {fileID: 2832484679354671515, guid: f88afd1e6e920410995430fdadafcd87, type: 3}
+  - {fileID: 4636444915155129257, guid: 0106c4c489ff144368895c10bcf42215, type: 3}
+--- !u!4 &758620710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758620708}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.79018, y: 94.03101, z: 47.4992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772735150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0000011816634}
+  m_AnchoredPosition: {x: 0, y: 0.000013318692}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &798626972
@@ -4675,7 +4748,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2031674713}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99992895
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5607,8 +5680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e468fe5fb364dc2bd1f64e9d05750c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 1300
-  moneyText: {fileID: 1395518287}
 --- !u!114 &1395518287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6996,8 +7067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae4c1774ece364865adcbe765c9ccbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 200
-  livesText: {fileID: 1711859220}
 --- !u!1 &1743774538
 GameObject:
   m_ObjectHideFlags: 0
@@ -7966,9 +8035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298e8719d7b8741038fa5904da936215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  horizontal: 0
-  vertical: 0
 --- !u!1 &1874098575
 GameObject:
   m_ObjectHideFlags: 0
@@ -9238,6 +9304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BAD
       objectReference: {fileID: 0}
+    - target: {fileID: 4636444915155129257, guid: 0106c4c489ff144368895c10bcf42215, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7220877083635639870, guid: 0106c4c489ff144368895c10bcf42215, type: 3}
       propertyPath: 'nodes.Array.data[0]'
       value: 
@@ -9406,6 +9476,10 @@ PrefabInstance:
     - target: {fileID: 6608770987274773603, guid: 7c89534330e68410b813ee075cd9a80f, type: 3}
       propertyPath: m_Name
       value: Blue Bloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6608770987274773603, guid: 7c89534330e68410b813ee075cd9a80f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8621262559972078861, guid: 7c89534330e68410b813ee075cd9a80f, type: 3}
       propertyPath: m_LocalScale.x
@@ -9584,6 +9658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zebra Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 6216625147367014361, guid: 138a6b1bc3d9d4dd8b0b15c092230edf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9615,6 +9693,10 @@ PrefabInstance:
     - target: {fileID: 1441515761409082666, guid: cf04727dd6b97443194ecfad2d54d132, type: 3}
       propertyPath: m_Name
       value: ZOMG
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441515761409082666, guid: cf04727dd6b97443194ecfad2d54d132, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3812377368630053629, guid: cf04727dd6b97443194ecfad2d54d132, type: 3}
       propertyPath: m_LocalScale.x
@@ -9797,6 +9879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MOAB
       objectReference: {fileID: 0}
+    - target: {fileID: 6187933973063847955, guid: e98574ea53f6e4a04a78f52320eca375, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6575893529045907346, guid: e98574ea53f6e4a04a78f52320eca375, type: 3}
       propertyPath: 'nodes.Array.data[0]'
       value: 
@@ -9889,6 +9975,10 @@ PrefabInstance:
     - target: {fileID: 3294667187276839219, guid: ec17882218ea346b1856ccccd9e11801, type: 3}
       propertyPath: m_Name
       value: Purple Bloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294667187276839219, guid: ec17882218ea346b1856ccccd9e11801, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3770601964817163821, guid: ec17882218ea346b1856ccccd9e11801, type: 3}
       propertyPath: m_LocalScale.x
@@ -10152,6 +10242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 6291683028177576959, guid: 7a0c0d2d0c57147728b4a3e21974030e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10289,6 +10383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 8650805325477649234, guid: d46e3c7d55eb84f6c832f22dcd7076fd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10305,6 +10403,10 @@ PrefabInstance:
     - target: {fileID: 840373558750508846, guid: b05aae30a84374f179373370cc3a3bf0, type: 3}
       propertyPath: m_Name
       value: White Bloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 840373558750508846, guid: b05aae30a84374f179373370cc3a3bf0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1311570589424063194, guid: b05aae30a84374f179373370cc3a3bf0, type: 3}
       propertyPath: 'nodes.Array.data[0]'
@@ -10491,6 +10593,10 @@ PrefabInstance:
     - target: {fileID: 6501310225000082657, guid: 1494fcf57c2a14e89af729ab0383702a, type: 3}
       propertyPath: m_Name
       value: Rainbow Bloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501310225000082657, guid: 1494fcf57c2a14e89af729ab0383702a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9092781869487111424, guid: 1494fcf57c2a14e89af729ab0383702a, type: 3}
       propertyPath: 'nodes.Array.data[0]'
@@ -10705,6 +10811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lead Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 7296776110309313807, guid: 83eace9a929e044748adacf2fb2eb3ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10770,6 +10880,10 @@ PrefabInstance:
     - target: {fileID: 2832484679354671515, guid: f88afd1e6e920410995430fdadafcd87, type: 3}
       propertyPath: m_Name
       value: DDT
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832484679354671515, guid: f88afd1e6e920410995430fdadafcd87, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7625688517938684981, guid: f88afd1e6e920410995430fdadafcd87, type: 3}
       propertyPath: 'nodes.Array.data[0]'
@@ -10984,6 +11098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 4400932923768325553, guid: 970fc615b620d4d608f68d2b33739e37, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11076,6 +11194,10 @@ PrefabInstance:
     - target: {fileID: 8270464460934812397, guid: 0329a43a9dfad45288d92516d1155ee3, type: 3}
       propertyPath: m_Name
       value: Pink Bloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270464460934812397, guid: 0329a43a9dfad45288d92516d1155ee3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8298166731253561284, guid: 0329a43a9dfad45288d92516d1155ee3, type: 3}
       propertyPath: m_LocalScale.x
@@ -11266,6 +11388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ceramic  Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 5869677673283740589, guid: 0a52eb4bd89b547bea612ba0419fdf0d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11403,6 +11529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black Bloon
       objectReference: {fileID: 0}
+    - target: {fileID: 8722091745915550594, guid: 2ed5ea289750e49eb91715482bbf7128, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11463,6 +11593,10 @@ PrefabInstance:
     - target: {fileID: 5180662230553664364, guid: 2dad13729cbf64dcfa3b035814ded579, type: 3}
       propertyPath: m_Name
       value: BFB
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180662230553664364, guid: 2dad13729cbf64dcfa3b035814ded579, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6644185050040744506, guid: 2dad13729cbf64dcfa3b035814ded579, type: 3}
       propertyPath: 'nodes.Array.data[0]'
@@ -11563,3 +11697,4 @@ SceneRoots:
   - {fileID: 1407605992}
   - {fileID: 1128370021}
   - {fileID: 525731054}
+  - {fileID: 758620710}
