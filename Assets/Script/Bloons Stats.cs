@@ -22,14 +22,14 @@ public class BloonsStats : MonoBehaviour
     public BloonsStats upperTier;
 
     public void takeDmg(float dmg)
-    (
+    {
         health -= dmg;
-    )
+    }
 
     public void regenerate()
-    (
+{
         if (regen)
-        (
+        {
             health = upperTier.health;
             damage = upperTier.damage;
             speed = upperTier.speed;
@@ -41,12 +41,12 @@ public class BloonsStats : MonoBehaviour
             white = upperTier.white;
             purple = upperTier.purple;
             ceramic = upperTier.ceramic;
-        )
-    )
+        }
+}
 
     public void downgrade()
-    (
-        health = lowerTierTier.health;
+    {
+        health = lowerTier.health;
         damage = lowerTier.damage;
         speed = lowerTier.speed;
         maxHealth = lowerTier.maxHealth;
@@ -57,7 +57,7 @@ public class BloonsStats : MonoBehaviour
         white = lowerTier.white;
         purple = lowerTier.purple;
         ceramic = lowerTier.ceramic;
-    )
+    }
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

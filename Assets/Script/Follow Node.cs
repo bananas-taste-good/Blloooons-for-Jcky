@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class FollowNode : MonoBehaviour
 {
     public Transform[] nodes;
     public int currentNode;
