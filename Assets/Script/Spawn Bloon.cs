@@ -26,7 +26,7 @@ public class SpawnBloon : MonoBehaviour
         if(spawnTimer > spawnDelay)
         {
             spawnTimer = 0f;
-            if (currentIndex < bloonSpawns.Length-1)
+            if (currentIndex < bloonSpawns.Length)
             {
                 GameObject bloon;
                 bloon = GameObject.Instantiate(bloonPrefab[bloonSpawns[currentIndex]]);
