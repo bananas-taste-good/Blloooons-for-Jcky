@@ -10,6 +10,13 @@ public class FollowNode : MonoBehaviour
     void Start()
     {
         maxNodes = nodes.Length;
+        GameObject mainFolder = GameObject.Find("Path Finding");
+        int counter = 0;
+        foreach(Transform child in mainFolder.transform)
+        {
+            nodes[counter] = child;
+            counter++;
+        }
     }
 
     // Update is called once per frame
