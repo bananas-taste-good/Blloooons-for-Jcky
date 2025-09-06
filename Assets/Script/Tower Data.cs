@@ -11,7 +11,7 @@ public class TowerData : MonoBehaviour
         towers[2] = new Tower(340, "Buccaneer");
         towers[4] = new Tower(1275, "Helicopter");
         towers[5] = new Tower(2125, "Super Monkey");
-        towers[6] = new Tower(375, "Mer Monkey");
+        towers[6] = new Tower(1080, "The Holy banana farm");
         towers[7] = new Tower(295, "Ninja");
         towers[8] = new Tower(300, "sniper");
         towers[9] = new Tower(210, "Wizard");
