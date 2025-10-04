@@ -20,6 +20,7 @@ public class Tower_Behaviour : MonoBehaviour
         if (target != null)
         {
             transform.LookAt(target.transform.position);
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
 
 
