@@ -28,6 +28,7 @@ public class Tower_Behaviour : MonoBehaviour
         {
             transform.LookAt(target.transform.position);
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+            if (fireCountdown > fireRate)
             {
                 fireCountdown = 0f;
                 Hearts h = target.GetComponent<Hearts>();
@@ -84,8 +85,9 @@ public class Tower_Behaviour : MonoBehaviour
     }
     public void fireProjectile()
     {
-        GameObject newProj = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        GameObject newProj = Instantiate(projectilePrefab, transform.position+ new Vector3(0,10,0), transform.rotation);
         Rigidbody rb = newProj.GetComponent<Rigidbody>();
-        rb.linearVelocity = transform.forward * 10;
+        rb.linearVelocity = transform.forward * 100;
+
     }
 }
