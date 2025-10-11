@@ -179,7 +179,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 56.23972
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -206,8 +206,8 @@ Transform:
   m_GameObject: {fileID: 97017245}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2664, y: 1338, z: 6357}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -475.32, y: 28.403, z: 1122.8}
+  m_LocalScale: {x: 0.5491, y: 0.5491, z: 0.5491}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -442,13 +442,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460781477}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.3648536, y: -0.21293743, z: -0.22871847, w: 0.87705606}
-  m_LocalPosition: {x: 1.45, y: 2.96, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: -475.32, y: 29.501, z: 1128.2}
+  m_LocalScale: {x: 0.5491, y: 0.5491, z: 0.5491}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -47.51, y: -17.812, z: -21.341}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &460781480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 529082932}
   - component: {fileID: 529082931}
   - component: {fileID: 529082930}
+  - component: {fileID: 529082935}
   m_Layer: 0
   m_Name: Test Bloon 2
   m_TagString: bloon
@@ -682,7 +683,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: a76dcc3083fbc4d8bbb67a5db6c1669e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -721,12 +722,26 @@ Transform:
   m_GameObject: {fileID: 529082929}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1889.7, y: 36.7, z: 4799.24}
-  m_LocalScale: {x: 15.911, y: 15.911, z: 15.911}
+  m_LocalPosition: {x: -1477.53, y: 25.58, z: 3760.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &529082935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529082929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5107a8c0257d54c7b846db94d926b84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
 --- !u!1 &898863349
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: ad32a99de30b743e0b67d1db4b67bc37, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -830,8 +845,8 @@ Transform:
   m_GameObject: {fileID: 898863349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1807.2156, y: -7.2, z: 4805}
-  m_LocalScale: {x: 45.423, y: 3.7316508, z: 43.273808}
+  m_LocalPosition: {x: -1467.7, y: 23.901, z: 3766.7}
+  m_LocalScale: {x: 10000, y: 1000000, z: 10000}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -849,6 +864,7 @@ GameObject:
   - component: {fileID: 1390776860}
   - component: {fileID: 1390776859}
   - component: {fileID: 1390776858}
+  - component: {fileID: 1390776863}
   m_Layer: 0
   m_Name: Test Balloon 1
   m_TagString: bloon
@@ -881,7 +897,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1390776859
 BoxCollider:
@@ -927,7 +943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: a76dcc3083fbc4d8bbb67a5db6c1669e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -966,12 +982,26 @@ Transform:
   m_GameObject: {fileID: 1390776857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1855, y: 122.2, z: 4801.4}
-  m_LocalScale: {x: 106.16653, y: 106.393776, z: 28.921904}
+  m_LocalPosition: {x: -1480.98, y: 25.55, z: 3760.46}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390776863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390776857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5107a8c0257d54c7b846db94d926b84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1000
+  maxHealth: 1100
 --- !u!1 &3621782625039793773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,8 +1032,8 @@ Transform:
   m_GameObject: {fileID: 5750784443703805620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1965.3147, y: 23.7, z: 4799.2256}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1554.5, y: 40.868, z: 3763.5}
+  m_LocalScale: {x: 0.5491, y: 0.5491, z: 0.5491}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5545346649350712662}
@@ -1018,8 +1048,8 @@ Transform:
   m_GameObject: {fileID: 3621782625039793773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 2.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 140.4, y: -31, z: 0}
+  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4937409015513521166}
@@ -1113,7 +1143,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 98.942474
+  m_Radius: 200
   m_Center: {x: 0, y: 69.0741, z: 0}
 --- !u!114 &7215373782537573406
 MonoBehaviour:
@@ -1127,14 +1157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452f16df3f877497891d8fcd873c845a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0
-  dmg: 0
-  pierce: 0
+  range: 200
+  dmg: 1
+  pierce: 1
   target: {fileID: 0}
   possibleTargets: []
-  fireRate: 0
-  fireCountdown: 0
-  projectilePrefab: {fileID: 0}
+  fireRate: 0.09
+  fireCountdown: 1
+  rangeCollider: {fileID: 0}
+  projectilePrefab: {fileID: 7295042658612852743, guid: 9ba87cfa0683441e5b05a4e544dc1ab2, type: 3}
 --- !u!114 &7215373782537573407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,7 +1173,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3621782625039793773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 452f16df3f877497891d8fcd873c845a, type: 3}
   m_Name: 
@@ -1154,6 +1185,7 @@ MonoBehaviour:
   possibleTargets: []
   fireRate: 0
   fireCountdown: 0
+  rangeCollider: {fileID: 0}
   projectilePrefab: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
