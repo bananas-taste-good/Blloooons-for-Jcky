@@ -10,11 +10,18 @@ public class Tower_Behaviour : MonoBehaviour
     public float fireRate;
     public float fireCountdown = 0f;
 
+    public SphereCollider rangeCollider;
+
     public GameObject projectilePrefab;
+
+    public void updateRange()
+    {
+        rangeCollider.radius = range;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        rangeCollider = GetComponent<SphereCollider>();
     }
 
     // Update is called once per frame
@@ -88,6 +95,26 @@ public class Tower_Behaviour : MonoBehaviour
         GameObject newProj = Instantiate(projectilePrefab, transform.position+ new Vector3(0,10,0), transform.rotation);
         Rigidbody rb = newProj.GetComponent<Rigidbody>();
         rb.linearVelocity = transform.forward * 100;
+
+    }
+
+    public void upgradeTower(float upgradeAmt, string upgradeType) {
+        switch (upgradeType)
+        {
+            case "dmg":
+                dmg +=(int)upgradeAmt;
+                break;
+            case "firerate":
+                fireRate -= upgradeAmt;
+                break;
+            case "range":
+                range += upgradeAmt;
+                updateRange();
+                break;
+            default:
+                break;
+
+        }
 
     }
 }
