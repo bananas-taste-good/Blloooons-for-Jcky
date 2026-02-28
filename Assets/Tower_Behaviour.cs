@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
-public class Tower_Behaviour : MonoBehaviour
+public class Tower_Behavior : MonoBehaviour
 {
     public float range;
-    public int dmg;
+    public float dmg;
     public int pierce;
     public GameObject target;
     public List<GameObject> possibleTargets = new List<GameObject>();
@@ -39,7 +39,7 @@ public class Tower_Behaviour : MonoBehaviour
             {
                 fireCountdown = 0f;
                 Hearts h = target.GetComponent<Hearts>();
-                h.takeDmg(dmg);
+                h.takeDmg((int)dmg);
                 fireProjectile();
                 if (h.health <= 0)
                 {
